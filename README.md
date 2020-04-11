@@ -34,3 +34,4 @@ OPTIONS:
 -   [ ] Escape \ character from path to add with simple one \.
 -   [ ] Detect current repository on url to run only with cdenon command.
 -   [ ] Allow more files type.
+-   [ ] Clean code.
