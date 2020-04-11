@@ -27,8 +27,6 @@ if(args.length >= 2) {
     pathToSave = args[1];
 }
 
-// STOP SERVER IF ITS OPEN
-Deno.run({args: [options.xamppStop]});
 // START SERVER
 Deno.run({args: [options.xamppStart]});
 
