@@ -3,7 +3,6 @@ import { emptyDirSync } from "https://deno.land/std/fs/mod.ts";
 import { walk  } from "https://deno.land/std/fs/mod.ts";
 import { mux } from "https://denolib.com/kt3k/mux-async-iterator/mod.ts";
 
-/* cdenon path */
 
 const options = {
     xamppDirServer: 'C:\\xampp\\htdocs',

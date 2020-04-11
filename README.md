@@ -12,7 +12,7 @@ At the moment only works for php files.
 ## Install
 
 isntall command 
-`deno install cdenon --allow-write --alow-read --alow-run 'url of cdenon'(not ready yet)`
+`deno install cdenon --allow-write --allow-read --allow-run 'url of cdenon'(not ready yet)`
 
 ## Usage
 
