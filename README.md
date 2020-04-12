@@ -11,14 +11,14 @@ At the moment only works for php files.
 
 ## Install
 
-isntall command 
+install command 
 `deno install cdenon --allow-write --allow-read --allow-run https://raw.githubusercontent.com/femave/live-server-reload/master/mod.ts`
 
 ## Usage
 
 ```
 Usage:
-    denon [PATH] [XAMPPATHH]*
+    cdenon [PATH] [XAMPPATHH]*
 
     * optional
 
