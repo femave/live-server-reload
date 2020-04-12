@@ -12,7 +12,7 @@ At the moment only works for php files.
 ## Install
 
 isntall command 
-`deno install cdenon --allow-write --allow-read --allow-run 'url of cdenon'(not ready yet)`
+`deno install cdenon --allow-write --allow-read --allow-run https://raw.githubusercontent.com/femave/live-server-reload/master/mod.ts`
 
 ## Usage
 
@@ -29,9 +29,10 @@ OPTIONS:
 
 ## Todo
 
--   [ ] Add download url IMPORTANT.
+-   [x] Add download url IMPORTANT. (github raw url, why not if its posible with Deno!)
 -   [x] Optional xamp path.
 -   [ ] Escape \ character from path to add with simple one \.
 -   [ ] Detect current repository on url to run only with cdenon command.
 -   [ ] Allow more files type.
 -   [ ] Clean code.
+-   [ ] Only move changed files.
