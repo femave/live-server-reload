@@ -12,7 +12,7 @@ At the moment only works for php files.
 ## Install
 
 install command 
-`deno install liver --allow-write --allow-read --allow-run https://raw.githubusercontent.com/femave/live-server-reload/master/mod.ts`
+`deno install liver --allow-write --allow-read --allow-run --allow-env https://raw.githubusercontent.com/femave/live-server-reload/master/mod.ts`
 
 ## Usage
 
@@ -32,7 +32,7 @@ OPTIONS:
 - [x] Add download url IMPORTANT. (github raw url, why not if its posible with Deno!)
 - [x] Optional xamp path.
 - [x] Escape \ character from path to add with simple one \.
-- [ ] Detect current repository on url to run only with liver command.
+- [x] Detect current repository on url to run only with liver command.
 - [ ] Allow more files type.
 - [x] \(DEPRECATED) Only move changed files. Not needed if we move bundles.
 - [x] Refactor code.

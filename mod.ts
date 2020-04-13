@@ -13,6 +13,7 @@ const options = {
 const args = Deno.args;
 const watchers = [];
 let pathToSave: string;
+let path = args[0] || Deno.cwd();
 
 if(args.length >= 2) {
     pathToSave = args[1];
@@ -22,7 +23,7 @@ if(args.length >= 2) {
 console.log('===== STARTING SERVER =====')
 Deno.run({args: [options.xamppStart]});
 
-watchers.push(watch(args[0]));
+watchers.push(watch(path));
 const multiplexer = mux(...watchers);
 let hasServerFile = false;
 
@@ -48,7 +49,7 @@ for await (const changes of multiplexer) {
     }
 
     await emptyDir(options.xamppDirServer);
-    await copy(args[0], options.xamppDirServer, { overwrite: true });
+    await copy(path, options.xamppDirServer, { overwrite: true });
     hasServerFile = false;
 
 }
