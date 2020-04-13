@@ -1,17 +1,8 @@
 
-import { walk  } from "https://deno.land/std/fs/mod.ts";
+import { walk } from "https://deno.land/std/fs/mod.ts";
+import { FileEvent, Changes } from "./interfaces.ts";
 
-/** All of the types of changes that a file can have */
-export enum FileEvent {
-    /** The file was changed */
-    Changed,
-    /** The file was created */
-    Created,
-    /** The file was remove */
-    Removed
-}
-
-export default async function* watch(target: string) {
+export default async function* watch(target: string): AsyncGenerator<Changes[]> {
     let prevFiles: { [filename: string]: number | null } = {};
 
     for await (const { filename, info } of walk(target)) {
