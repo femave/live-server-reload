@@ -13,6 +13,6 @@ const path = args[0] || Deno.cwd();
 
 // START SERVER
 console.log('===== STARTING SERVER =====')
-Deno.run({args: [options.xamppStart]});
+Deno.run({cmd: [options.xamppStart]});
 
 copyDir(options, path);

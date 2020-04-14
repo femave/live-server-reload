@@ -27,8 +27,8 @@ export default async function copyDir(options: Options, path: string): Promise<v
         }
 
         if(hasServerFile) {
-            Deno.run({args: [options.xamppStop]});
-            Deno.run({args: [options.xamppStart]});
+            Deno.run({cmd: [options.xamppStop]});
+            Deno.run({cmd: [options.xamppStart]});
         }
 
         await emptyDir(options.xamppDirServer);
